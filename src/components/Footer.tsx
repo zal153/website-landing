@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img src="/logo1.png" alt="Logo HMI" className="h-10 w-auto" />
+              <img src="/HMI.svg" alt="Logo HMI" className="h-10 w-auto" />
               <img src="/logo2.png" alt="Logo Universitas" className="h-10 w-auto" />
             </div>
             <p className="text-gray-300">

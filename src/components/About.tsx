@@ -39,7 +39,7 @@ const About: React.FC = () => {
           </div>
           <div className="fade-in">
             <img
-              src="https://via.placeholder.com/600x400/22c55e/ffffff?text=HMI+Activity"
+              src="/public/rak.png"
               alt="Aktivitas HMI"
               className="rounded-lg shadow-lg w-full"
             />

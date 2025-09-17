@@ -54,37 +54,37 @@ const Gallery: React.FC = () => {
 
   const galleryImages = [
     {
-      url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+1',
+      url: '/public/selamat.jpg',
       alt: 'Galeri 1',
     },
     {
-      url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+2',
+      url: '/public/kajian.png',
       alt: 'Galeri 2',
     },
     {
-      url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+3',
+      url: '/public/sarasehan.png',
       alt: 'Galeri 3',
     },
-    {
-      url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+4',
-      alt: 'Galeri 4',
-    },
-    {
-      url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+5',
-      alt: 'Galeri 5',
-    },
-    {
-      url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+6',
-      alt: 'Galeri 6',
-    },
-    {
-      url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+7',
-      alt: 'Galeri 7',
-    },
-    {
-      url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+8',
-      alt: 'Galeri 8',
-    },
+    // {
+    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+4',
+    //   alt: 'Galeri 4',
+    // },
+    // {
+    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+5',
+    //   alt: 'Galeri 5',
+    // },
+    // {
+    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+6',
+    //   alt: 'Galeri 6',
+    // },
+    // {
+    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+7',
+    //   alt: 'Galeri 7',
+    // },
+    // {
+    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+8',
+    //   alt: 'Galeri 8',
+    // },
   ];
 
   const openLightbox = (imageUrl: string, imageAlt: string, index: number) => {

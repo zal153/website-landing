@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -9,14 +10,30 @@ const Contact: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setShowError(false);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // EmailJS configuration
+      const templateParams = {
+        from_name: formData.nama,
+        from_email: formData.email,
+        subject: formData.subjek,
+        message: formData.pesan,
+        to_email: 'hmi@unbamadura.ac.id', // Email tujuan
+      };
+
+      await emailjs.send(
+        'service_qgl5y2i', // Dapatkan dari EmailJS dashboard
+        'template_xvqxias', // Dapatkan dari EmailJS dashboard
+        templateParams,
+        'b9jgdE1m57r8eP_DM' // Dapatkan dari EmailJS dashboard
+      );
+
       setShowSuccess(true);
       setFormData({
         nama: '',
@@ -29,7 +46,17 @@ const Contact: React.FC = () => {
       setTimeout(() => {
         setShowSuccess(false);
       }, 5000);
-    }, 2000);
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      setShowError(true);
+      
+      // Hide error message after 5 seconds
+      setTimeout(() => {
+        setShowError(false);
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -55,7 +82,7 @@ const Contact: React.FC = () => {
                 <div className="flex items-center">
                   <i className="fas fa-map-marker-alt text-green-600 text-xl w-6"></i>
                   <span className="ml-4 text-gray-600">
-                    Universitas Bahaudin Mudhary Madura, Jl. Raya Telang, PO BOX 1, Kamal, Bangkalan, Madura
+                    Jl. Raya Lenteng, Aredake, Batuan, Kec. Batuan, Kabupaten Sumenep, Jawa Timur 69451.
                   </span>
                 </div>
                 <div className="flex items-center">
@@ -68,7 +95,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="flex items-center">
                   <i className="fab fa-instagram text-green-600 text-xl w-6"></i>
-                  <span className="ml-4 text-gray-600">@hmi_unbamadura</span>
+                  <span className="ml-4 text-gray-600">@hmi.kom_p_uniba</span>
                 </div>
               </div>
 
@@ -76,16 +103,35 @@ const Contact: React.FC = () => {
                 <h4 className="text-lg font-semibold text-gray-800 mb-4">Ikuti Media Sosial Kami</h4>
                 <div className="flex space-x-4">
                   {[
-                    { icon: 'fab fa-facebook-f', href: '#' },
-                    { icon: 'fab fa-instagram', href: 'https://www.instagram.com/hmi.kom_p_uniba' },
-                    { icon: 'fab fa-twitter', href: '#' },
-                    { icon: 'fab fa-youtube', href: '#' },
+                    {
+                      icon: 'fab fa-facebook-f',
+                      href: '#',
+                      label: 'Facebook',
+                    },
+                    {
+                      icon: 'fab fa-instagram',
+                      href: 'https://www.instagram.com/hmi.kom_p_uniba',
+                      label: 'Instagram',
+                    },
+                    {
+                      icon: 'fab fa-twitter',
+                      href: '#',
+                      label: 'Twitter',
+                    },
+                    {
+                      icon: 'fab fa-youtube',
+                      href: '#',
+                      label: 'YouTube',
+                    }
                   ].map((social, index) => (
                     <a
                       key={index}
                       href={social.href}
-                      onClick={(e) => e.preventDefault()}
+                      target={social.href !== '#' ? '_blank' : '_self'}
+                      rel={social.href !== '#' ? 'noopener noreferrer' : undefined}
+                      onClick={social.href === '#' ? (e) => e.preventDefault() : undefined}
                       className="bg-green-600 hover:bg-green-700 text-white p-3 rounded-full transition-colors duration-200"
+                      title={social.label}
                     >
                       <i className={social.icon}></i>
                     </a>
@@ -148,10 +194,10 @@ const Contact: React.FC = () => {
                   {isSubmitting ? (
                     <>
                       <i className="fas fa-spinner fa-spin mr-2"></i>
-                      Mengirim...
+                      Mengirim Email...
                     </>
                   ) : (
-                    'Kirim Pesan'
+                    'Kirim Email'
                   )}
                 </button>
               </form>
@@ -165,7 +211,17 @@ const Contact: React.FC = () => {
         <div className="fixed top-20 right-4 bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg z-50 transform transition-transform duration-300">
           <div className="flex items-center">
             <i className="fas fa-check-circle mr-3"></i>
-            <span>Pesan berhasil dikirim! Kami akan segera merespons.</span>
+            <span>Email berhasil dikirim! Kami akan segera merespons.</span>
+          </div>
+        </div>
+      )}
+
+      {/* Error Message */}
+      {showError && (
+        <div className="fixed top-20 right-4 bg-red-600 text-white px-6 py-4 rounded-lg shadow-lg z-50 transform transition-transform duration-300">
+          <div className="flex items-center">
+            <i className="fas fa-exclamation-circle mr-3"></i>
+            <span>Gagal mengirim email. Silakan coba lagi.</span>
           </div>
         </div>
       )}
