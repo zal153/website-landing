@@ -22,7 +22,7 @@ const Preloader: React.FC = () => {
       <div className="text-center">
         <div className="flex items-center space-x-3 mb-4">
           <img src="/logo1.png" alt="Logo HMI" className="h-16 w-auto animate-pulse" />
-          <img src="/logo2.png" alt="Logo Universitas" className="h-16 w-auto animate-pulse" />
+          {/* <img src="/logo2.png" alt="Logo Universitas" className="h-16 w-auto animate-pulse" /> */}
         </div>
         <div className="w-12 h-12 border-4 border-green-200 border-t-green-600 rounded-full animate-spin mx-auto"></div>
         <p className="text-gray-600 mt-4 font-semibold">Memuat...</p>

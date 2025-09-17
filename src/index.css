@@ -2,7 +2,7 @@
 
 /* Custom styles for the HMI website */
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path-to-your-image.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/bg-1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

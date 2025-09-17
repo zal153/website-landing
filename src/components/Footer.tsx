@@ -8,6 +8,9 @@ const Footer: React.FC = () => {
     }
   };
 
+  // Get current year dynamically
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-800 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +51,7 @@ const Footer: React.FC = () => {
             <div className="space-y-2 text-gray-300">
               <p>
                 <i className="fas fa-map-marker-alt mr-2"></i>
-                Bangkalan, Madura
+                Sumenep, Madura
               </p>
               <p>
                 <i className="fas fa-phone mr-2"></i>
@@ -62,7 +65,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 HMI Universitas Bahaudin Mudhary Madura. All rights reserved.</p>
+          <p>&copy; {currentYear} HMI Universitas Bahaudin Mudhary Madura. All rights reserved.</p>
         </div>
       </div>
     </footer>
