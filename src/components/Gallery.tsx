@@ -54,15 +54,15 @@ const Gallery: React.FC = () => {
 
   const galleryImages = [
     {
-      url: '/public/selamat.jpg',
+      url: '/selamat.jpg',
       alt: 'Galeri 1',
     },
     {
-      url: '/public/kajian.png',
+      url: '/kajian.png',
       alt: 'Galeri 2',
     },
     {
-      url: '/public/sarasehan.png',
+      url: '/sarasehan.png',
       alt: 'Galeri 3',
     },
     // {

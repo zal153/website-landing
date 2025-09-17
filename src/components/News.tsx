@@ -45,7 +45,7 @@ const News: React.FC = () => {
       date: '16 September 2025',
       title: 'HMI Komisariat P UNIBA Madura Miliki Nahkoda Baru',
       excerpt: 'Himpunan Mahasiswa Islam (HMI) Komisariat P UNIBA Madura resmi memiliki nahkoda baru. Dalam Rapat Anggota Komisariat (RAK) yang digelar baru-baru ini...',
-      imageUrl: '/public/image.png',
+      imageUrl: '/image.png',
       externalUrl: 'https://surabaya.blok-a.com/pendidikan/hmi-komisariat-p-uniba-madura-miliki-nahkoda-baru/', // Link eksternal
     },
     {
