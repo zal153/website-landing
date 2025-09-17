@@ -48,20 +48,20 @@ const News: React.FC = () => {
       imageUrl: '/image.png',
       externalUrl: 'https://surabaya.blok-a.com/pendidikan/hmi-komisariat-p-uniba-madura-miliki-nahkoda-baru/', // Link eksternal
     },
-    {
-      date: '10 September 2025',
-      title: 'Seminar Nasional "Islam dan Modernisasi"',
-      excerpt: 'HMI menyelenggarakan seminar nasional dengan tema Islam dan Modernisasi yang dihadiri ratusan peserta...',
-      imageUrl: 'https://via.placeholder.com/400x250/22c55e/ffffff?text=Berita+2',
-      externalUrl: 'https://republika.co.id/berita/seminar-islam-modernisasi',
-    },
-    {
-      date: '5 September 2025',
-      title: 'Bakti Sosial di Desa Terpencil',
-      excerpt: 'Kegiatan bakti sosial HMI memberikan bantuan kepada masyarakat kurang mampu di desa terpencil...',
-      imageUrl: 'https://via.placeholder.com/400x250/22c55e/ffffff?text=Berita+3',
-      // Tanpa externalUrl = link internal
-    },
+    // {
+    //   date: '10 September 2025',
+    //   title: 'Seminar Nasional "Islam dan Modernisasi"',
+    //   excerpt: 'HMI menyelenggarakan seminar nasional dengan tema Islam dan Modernisasi yang dihadiri ratusan peserta...',
+    //   imageUrl: 'https://via.placeholder.com/400x250/22c55e/ffffff?text=Berita+2',
+    //   externalUrl: 'https://republika.co.id/berita/seminar-islam-modernisasi',
+    // },
+    // {
+    //   date: '5 September 2025',
+    //   title: 'Bakti Sosial di Desa Terpencil',
+    //   excerpt: 'Kegiatan bakti sosial HMI memberikan bantuan kepada masyarakat kurang mampu di desa terpencil...',
+    //   imageUrl: 'https://via.placeholder.com/400x250/22c55e/ffffff?text=Berita+3',
+    //   // Tanpa externalUrl = link internal
+    // },
   ];
 
   return (
