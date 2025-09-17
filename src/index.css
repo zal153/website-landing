@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Custom styles for the HMI website */
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path-to-your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar-scroll {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.logo-container img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logo-container img {
+    height: 40px;
+  }
+  .hero-bg {
+    background-attachment: scroll;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

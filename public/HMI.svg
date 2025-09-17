@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40.458mm" height="130mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 4046 13000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#FEFEFE}
+    .fil0 {fill:black}
+    .fil1 {fill:#00840E}
+    .fil3 {fill:#FEFEFE;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="2707,714 2023,0 2023,3956 4046,3956 4046,714 3362,0 "/>
+  <polygon class="fil1" points="1339,714 2023,0 2023,3956 0,3956 0,714 684,0 "/>
+  <polygon class="fil1" points="2023,3956 2023,13000 4046,11066 4046,3956 "/>
+  <polygon class="fil0" points="2023,3956 2023,13000 0,11066 0,3956 "/>
+  <path class="fil2" d="M1862 1013c-656,0 -1188,532 -1188,1188 0,656 532,1188 1188,1188 396,0 747,-194 963,-492 -169,136 -388,218 -627,218 -534,0 -966,-409 -966,-914 0,-505 433,-914 966,-914 239,0 458,82 627,218 -216,-298 -567,-492 -963,-492z"/>
+  <polygon class="fil2" points="2778,1669 2917,2076 3372,2075 3004,2326 3145,2733 2778,2481 2410,2733 2552,2326 2183,2075 2638,2076 "/>
+  <polygon class="fil3" points="2286,9577 2286,11466 1760,11466 1760,9577 "/>
+  <path class="fil3" d="M1030 9100l0 -1360c0,-168 51,-306 152,-413 102,-107 233,-160 395,-160 192,0 340,89 443,265 63,-96 131,-164 203,-204 73,-41 162,-61 268,-61 169,0 298,53 388,160 89,107 134,260 134,461l0 1311 -557 0 0 -1227c0,-59 -5,-99 -15,-118 -10,-19 -30,-29 -60,-29 -56,0 -83,46 -83,138l0 1237 -557 0 0 -1227c0,-58 -5,-98 -15,-118 -10,-20 -30,-30 -60,-30 -55,0 -83,49 -83,148l0 1227 -557 0z"/>
+  <polygon class="fil3" points="1114,4769 1700,4769 1700,5432 2343,5432 2343,4769 2932,4769 2932,6669 2343,6669 2343,5900 1700,5900 1700,6669 1114,6669 "/>
+ </g>
+</svg>
