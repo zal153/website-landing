@@ -53,10 +53,10 @@ const Gallery: React.FC = () => {
   });
 
   const galleryImages = [
-    {
-      url: '/selamat.jpg',
-      alt: 'Galeri 1',
-    },
+    // {
+    //   url: '/selamat.jpg',
+    //   alt: 'Galeri 1',
+    // },
     {
       url: '/kajian.png',
       alt: 'Galeri 2',
