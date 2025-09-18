@@ -49,8 +49,10 @@ const Navbar: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            {/* Logo */}
-            <div className="flex items-center space-x-3">
+            {/* Logo - Hidden when mobile menu is open */}
+            <div className={`flex items-center space-x-3 transition-all duration-300 ${
+              isMobileMenuOpen ? 'lg:flex opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'
+            }`}>
               <img src="/HMI.svg" alt="Logo HMI" className="h-8 w-auto" />
               <img src="/logo2.png" alt="Logo Kohati" className="h-8 w-auto" />
             </div>
