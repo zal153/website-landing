@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
             <div className={`flex items-center space-x-3 transition-all duration-300 ${
               isMobileMenuOpen ? 'lg:flex opacity-0 pointer-events-none' : 'opacity-100 pointer-events-auto'
             }`}>
-              <img src="/HMI.svg" alt="Logo HMI" className="h-8 w-auto" />
+              <img src="/logo3.png" alt="Logo HMI" className="h-8 w-auto" />
               <img src="/logo2.png" alt="Logo Kohati" className="h-8 w-auto" />
             </div>
 
@@ -129,7 +129,7 @@ const Navbar: React.FC = () => {
               : 'translate-y-4 opacity-0'
           }`}>
             <div className="flex items-center space-x-3">
-              <img src="/HMI.svg" alt="Logo HMI" className="h-8 w-auto" />
+              <img src="/logo3.png" alt="Logo HMI" className="h-8 w-auto" />
               <img src="/logo2.png" alt="Logo Kohati" className="h-8 w-auto" />
             </div>
             <button
