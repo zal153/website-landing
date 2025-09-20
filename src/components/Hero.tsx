@@ -7,21 +7,21 @@ const Hero: React.FC = () => {
   const kaderData = [
     {
       id: 1,
-      nama: "Ahmad Rifai",
-      jabatan: "Koordinator Pengkaderan",
-      foto: "/kader1.jpg", // Ganti dengan foto asli
-      whatsapp: "6281234567890",
-      telegram: "@ahmadrifai_hmi",
-      instagram: "@rifai.ahmad"
+      nama: "Bagas Normahendra",
+      // jabatan: "Koordinator Pengkaderan",
+      foto: "/kader1.jpg",
+      whatsapp: "+6287734176081",
+      // telegram: "@ahmadrifai_hmi",
+      instagram: "#"
     },
     {
       id: 2,
-      nama: "Siti Aminah",
-      jabatan: "Sekretaris Pengkaderan",
-      foto: "/kader2.jpg", // Ganti dengan foto asli
-      whatsapp: "6281234567891",
-      telegram: "@aminah_hmi",
-      instagram: "@siti.aminah"
+      nama: "Farhatun Hasanah",
+      // jabatan: "Sekretaris Pengkaderan",
+      foto: "/kader2.jpg",
+      whatsapp: "+6282335212256",
+      // telegram: "@aminah_hmi",
+      instagram: "#"
     }
   ];
 
@@ -30,9 +30,9 @@ const Hero: React.FC = () => {
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
-  const handleTelegramContact = (username: string) => {
-    window.open(`https://t.me/${username.replace('@', '')}`, '_blank');
-  };
+  // const handleTelegramContact = (username: string) => {
+  //   window.open(`https://t.me/${username.replace('@', '')}`, '_blank');
+  // };
 
   const handleInstagramContact = (username: string) => {
     window.open(`https://instagram.com/${username.replace('@', '')}`, '_blank');
@@ -162,7 +162,7 @@ const Hero: React.FC = () => {
                         </div>
                       </div>
                       <h4 className="text-xl font-bold text-gray-800 mb-1">{kader.nama}</h4>
-                      <p className="text-green-600 font-semibold">{kader.jabatan}</p>
+                      {/* <p className="text-green-600 font-semibold">{kader.jabatan}</p> */}
                     </div>
 
                     {/* Contact Options */}
@@ -177,13 +177,13 @@ const Hero: React.FC = () => {
                       </button>
 
                       {/* Telegram */}
-                      <button
+                      {/* <button
                         onClick={() => handleTelegramContact(kader.telegram)}
                         className="w-full flex items-center justify-center space-x-3 bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md"
                       >
                         <i className="fab fa-telegram text-xl"></i>
                         <span className="font-semibold">Chat Telegram</span>
-                      </button>
+                      </button> */}
 
                       {/* Instagram */}
                       <button

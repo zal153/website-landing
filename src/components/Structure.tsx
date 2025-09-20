@@ -25,22 +25,28 @@ const OfficerCard: React.FC<OfficerProps> = ({ name, position, description, imag
 const Structure: React.FC = () => {
   const officers = [
     {
-      name: 'Ahmad Fauzi',
+      name: 'Bagas Normahendra',
       position: 'Ketua Umum',
       description: 'Memimpin dan mengkoordinasikan seluruh kegiatan organisasi HMI',
       imageUrl: 'https://via.placeholder.com/200x200/22c55e/ffffff?text=Ketua',
     },
     {
-      name: 'Siti Khadijah',
+      name: 'Sutrisno',
       position: 'Sekretaris Umum',
       description: 'Mengelola administrasi dan dokumentasi organisasi',
       imageUrl: 'https://via.placeholder.com/200x200/22c55e/ffffff?text=Sekretaris',
     },
     {
-      name: 'Muhammad Rizki',
+      name: 'Farhatun Hasanah',
       position: 'Bendahara Umum',
       description: 'Mengelola keuangan dan aset organisasi',
       imageUrl: 'https://via.placeholder.com/200x200/22c55e/ffffff?text=Bendahara',
+    },
+    {
+      name: 'Raghda Nabila',
+      position: 'Wakil Bendahara Umum',
+      description: 'Membantu bendahara dalam pengelolaan keuangan',
+      imageUrl: 'https://via.placeholder.com/200x200/22c55e/ffffff?text=Wakil+Bendahara',
     },
   ];
 
