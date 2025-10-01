@@ -5,7 +5,7 @@ interface NewsArticleProps {
   title: string;
   excerpt: string;
   imageUrl: string;
-  externalUrl?: string; // Link eksternal
+  externalUrl?: string;
 }
 
 const NewsArticle: React.FC<NewsArticleProps> = ({ date, title, excerpt, imageUrl, externalUrl }) => {
@@ -48,20 +48,34 @@ const News: React.FC = () => {
       imageUrl: '/image.png',
       externalUrl: 'https://surabaya.blok-a.com/pendidikan/hmi-komisariat-p-uniba-madura-miliki-nahkoda-baru/', // Link eksternal
     },
-    // {
-    //   date: '10 September 2025',
-    //   title: 'Seminar Nasional "Islam dan Modernisasi"',
-    //   excerpt: 'HMI menyelenggarakan seminar nasional dengan tema Islam dan Modernisasi yang dihadiri ratusan peserta...',
-    //   imageUrl: 'https://via.placeholder.com/400x250/22c55e/ffffff?text=Berita+2',
-    //   externalUrl: 'https://republika.co.id/berita/seminar-islam-modernisasi',
-    // },
-    // {
-    //   date: '5 September 2025',
-    //   title: 'Bakti Sosial di Desa Terpencil',
-    //   excerpt: 'Kegiatan bakti sosial HMI memberikan bantuan kepada masyarakat kurang mampu di desa terpencil...',
-    //   imageUrl: 'https://via.placeholder.com/400x250/22c55e/ffffff?text=Berita+3',
-    //   // Tanpa externalUrl = link internal
-    // },
+    {
+      date: '30 September 2025',
+      title: 'Himpunan Mahasiswa Islam: Organisasi Sebagai Episentrum Peradaban',
+      excerpt: 'Jika ada organisasi kemahasiswaan yang mampu memadukan nilai keislaman dan kebangsaan dalam satu tarikan nafas, maka Himpunan Mahasiswa Islam HMI adalah jawabannya. Bagi saya pribadi,...',
+      imageUrl: 'https://limadetik.com/wp-content/uploads/IMG-20250930-WA0002-scaled-e1759244488873.jpg',
+      externalUrl: 'https://limadetik.com/himpunan-mahasiswa-islam-organisasi-sebagai-episentrum-peradaban/',
+    },
+    {
+      date: '29 September 2025',
+      title: 'Pentingnya Berorganisasi dalam Mengembangkan Intelektual Mahasiswa',
+      excerpt: 'HMI merupakan singkatan dari himpunan mahasiswa islam yang didirikan oleh Lafrane Pane pada tanggal 5 februari tahun 1947 di yogyakarta. yang bertujuan...',
+      imageUrl: 'https://globalindo.net/wp-content/uploads/2025/09/IMG-20250929-WA0056-2048x1152.jpg',
+      externalUrl: 'https://globalindo.net/2025/09/29/43492/',
+    },
+    {
+      date: '29 September 2025',
+      title: 'Bersama HMI dan Menjadi Mahasiswa “Privileged”',
+      excerpt: 'Keputusan untuk bergabung Himpunan Mahasiswa Islam (HMI) bukanlah sesuatu yang direncanakan secara matang sejak awal. Motivasi saya cukup sederhana: “yang penting saya ikut organisasi.” Namun, seiring berjalannya waktu,...',
+      imageUrl: 'https://detektifjatim.com/wp-content/uploads/2025/09/IMG-20250929-WA0000.jpg',
+      externalUrl: 'https://detektifjatim.com/2025/09/bersama-hmi-dan-menjadi-mahasiswa-privileged/',
+    },
+    {
+      date: '1 Oktober 2025',
+      title: 'Peran HMI dalam Meningkatkan SDM dan Kepekaan Mahasiswa Pada Isu Sosial',
+      excerpt: 'Mahasiswa bukan hanya sekadar individu yang duduk di bangku kuliah, tetapi juga agen perubahan yang kelak akan menentukan arah bangsa. Dalam konteks ini, Himpunan Mahasiswa Islam (HMI) hadir sebagai...',
+      imageUrl: 'https://detektifjatim.com/wp-content/uploads/2025/10/IMG-20251001-WA0002-1920x1080.jpg',
+      externalUrl: 'https://detektifjatim.com/2025/10/peran-hmi-dalam-meningkatkan-sdm-dan-kepekaan-mahasiswa-pada-isu-sosial/',
+    },
   ];
 
   return (
