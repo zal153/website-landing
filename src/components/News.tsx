@@ -49,11 +49,11 @@ const News: React.FC = () => {
       externalUrl: 'https://surabaya.blok-a.com/pendidikan/hmi-komisariat-p-uniba-madura-miliki-nahkoda-baru/', // Link eksternal
     },
     {
-      date: '30 September 2025',
-      title: 'Himpunan Mahasiswa Islam: Organisasi Sebagai Episentrum Peradaban',
-      excerpt: 'Jika ada organisasi kemahasiswaan yang mampu memadukan nilai keislaman dan kebangsaan dalam satu tarikan nafas, maka Himpunan Mahasiswa Islam HMI adalah jawabannya. Bagi saya pribadi,...',
-      imageUrl: 'https://limadetik.com/wp-content/uploads/IMG-20250930-WA0002-scaled-e1759244488873.jpg',
-      externalUrl: 'https://limadetik.com/himpunan-mahasiswa-islam-organisasi-sebagai-episentrum-peradaban/',
+      date: '29 September 2025',
+      title: 'Bersama HMI dan Menjadi Mahasiswa “Privileged”',
+      excerpt: 'Keputusan untuk bergabung Himpunan Mahasiswa Islam (HMI) bukanlah sesuatu yang direncanakan secara matang sejak awal. Motivasi saya cukup sederhana: “yang penting saya ikut organisasi.” Namun, seiring berjalannya waktu,...',
+      imageUrl: 'https://detektifjatim.com/wp-content/uploads/2025/09/IMG-20250929-WA0000.jpg',
+      externalUrl: 'https://detektifjatim.com/2025/09/bersama-hmi-dan-menjadi-mahasiswa-privileged/',
     },
     {
       date: '29 September 2025',
@@ -63,11 +63,11 @@ const News: React.FC = () => {
       externalUrl: 'https://globalindo.net/2025/09/29/43492/',
     },
     {
-      date: '29 September 2025',
-      title: 'Bersama HMI dan Menjadi Mahasiswa “Privileged”',
-      excerpt: 'Keputusan untuk bergabung Himpunan Mahasiswa Islam (HMI) bukanlah sesuatu yang direncanakan secara matang sejak awal. Motivasi saya cukup sederhana: “yang penting saya ikut organisasi.” Namun, seiring berjalannya waktu,...',
-      imageUrl: 'https://detektifjatim.com/wp-content/uploads/2025/09/IMG-20250929-WA0000.jpg',
-      externalUrl: 'https://detektifjatim.com/2025/09/bersama-hmi-dan-menjadi-mahasiswa-privileged/',
+      date: '30 September 2025',
+      title: 'Himpunan Mahasiswa Islam: Organisasi Sebagai Episentrum Peradaban',
+      excerpt: 'Jika ada organisasi kemahasiswaan yang mampu memadukan nilai keislaman dan kebangsaan dalam satu tarikan nafas, maka Himpunan Mahasiswa Islam HMI adalah jawabannya. Bagi saya pribadi,...',
+      imageUrl: 'https://limadetik.com/wp-content/uploads/IMG-20250930-WA0002-scaled-e1759244488873.jpg',
+      externalUrl: 'https://limadetik.com/himpunan-mahasiswa-islam-organisasi-sebagai-episentrum-peradaban/',
     },
     {
       date: '1 Oktober 2025',
