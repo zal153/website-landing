@@ -70,6 +70,13 @@ const News: React.FC = () => {
       externalUrl: 'https://limadetik.com/himpunan-mahasiswa-islam-organisasi-sebagai-episentrum-peradaban/',
     },
     {
+      date: '30 September 2025',
+      title: 'Peran HMI dalam Meningkatkan SDM dan Kepekaan Mahasiswa Pada Isu Sosial',
+      excerpt: 'Zero, Opini – Mahasiswa bukan hanya sekadar individu yang duduk di bangku kuliah, tetapi juga agen perubahan yang kelak akan menentukan arah bangsa...',
+      imageUrl: 'https://zero.co.id/wp-content/uploads/2025/09/c47ad2e4-0397-4c42-bbd8-ecdf8a230a2d-800x450.jpeg',
+      externalUrl: 'https://zero.co.id/opini/peran-hmi-dalam-meningkatkan-sdm-dan-kepekaan-mahasiswa-pada-isu-sosial/',
+    },
+    {
       date: '1 Oktober 2025',
       title: 'Peran HMI dalam Meningkatkan SDM dan Kepekaan Mahasiswa Pada Isu Sosial',
       excerpt: 'Mahasiswa bukan hanya sekadar individu yang duduk di bangku kuliah, tetapi juga agen perubahan yang kelak akan menentukan arah bangsa. Dalam konteks ini, Himpunan Mahasiswa Islam (HMI) hadir sebagai...',
