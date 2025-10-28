@@ -133,6 +133,21 @@ const Gallery: React.FC = () => {
       alt: 'Galeri 8',
       orientation: 'landscape',
     },
+    {
+      url: '/pelantikan/14.jpg',
+      alt: 'Galeri 8',
+      orientation: 'landscape',
+    },
+    {
+      url: '/pelantikan/15.jpg',
+      alt: 'Galeri 8',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/16.jpg',
+      alt: 'Galeri 8',
+      orientation: 'portrait',
+    },
   ];
 
   const openLightbox = (imageUrl: string, imageAlt: string, index: number) => {

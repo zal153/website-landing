@@ -88,7 +88,21 @@ const News: React.FC = () => {
       title: 'HMI Komisariat (P) UNIBA Madura periode 2025-2026 Resmi Dilantik',
       excerpt: 'Himpunan Mahasiswa Islam (HMI) Komisariat (P) Universitas Bahaudin Mudhary (UNIBA) Madura resmi melantik pengurus baru periode 2025–2026, Senin (27/10/2025) malam. Prosesi pelantikan berlangsung khidmat di Hotel C1 Sumenep dengan...',
       imageUrl: 'https://kliktimes.id/wp-content/uploads/2025/10/20251028_131952.jpg',
-      externalUrl: 'https://detektifjatim.com/2025/10/peran-hmi-dalam-meningkatkan-sdm-dan-kepekaan-mahasiswa-pada-isu-sosial/',
+      externalUrl: 'https://kliktimes.id/hmi-komisariat-p-uniba-madura-periode-2025-2026-resmi-dilantik/',
+    },
+    {
+      date: '28 Oktober 2025',
+      title: 'HMI Komisariat Persiapan Uniba Madura Resmi Dilantik, Bagas: Ini Sejarah dan Amanah Besar',
+      excerpt: 'Himpunan Mahasiswa Islam (HMI) Cabang Sumenep resmi melantik Komisariat P Uniba Madura pada Senin 27/10/2025 di Hotel C1, ini menandakan tonggak sejarah baru bagi...',
+      imageUrl: 'https://bombastik.id/storage/2025/10/WhatsApp-Image-2025-10-28-at-12.59.05-PM.jpeg',
+      externalUrl: 'https://bombastik.id/2025/hmi-komisariat-persiapan-uniba-madura-resmi-dilantik/',
+    },
+    {
+      date: '28 Oktober 2025',
+      title: 'Perjuangan Panjang Terbayar, HMI Komisariat (P) UNIBA Madura Akhirnya Resmi Di Lantik',
+      excerpt: 'Himpunan Mahasiswa Islam (HMI) Komisariat (P) Universitas Bahaudin Mudhary (UNIBA) Madura resmi melantik pengurus baru periode 2025–2026, Senin (27/10/2025) malam. Prosesi pelantikan berlangsung khidmat di Hotel C1 Sumenep dengan...',
+      imageUrl: 'https://okaranews.id/wp-content/uploads/2025/10/IMG-20251027-WA0120-2048x1536.jpg',
+      externalUrl: 'https://okaranews.id/perjuangan-panjang-terbayar-hmi-komisariat-p-uniba-madura-akhirnya-resmi-di-lantik/',
     },
   ];
 

@@ -101,25 +101,25 @@ const Contact: React.FC = () => {
                 <div className="flex space-x-4">
                   {[
                     {
-                      icon: 'fab fa-facebook-f',
-                      href: '#',
-                      label: 'Facebook',
+                      icon: 'fab fa-tiktok',
+                      href: 'https://www.tiktok.com/@hmipunibamadura?_t=ZS-90vA0BmzMjH&_r=1',
+                      label: 'TikTok',
                     },
                     {
                       icon: 'fab fa-instagram',
                       href: 'https://www.instagram.com/hmi.kom_p_uniba',
                       label: 'Instagram',
                     },
-                    {
-                      icon: 'fab fa-twitter',
-                      href: '#',
-                      label: 'Twitter',
-                    },
-                    {
-                      icon: 'fab fa-youtube',
-                      href: '#',
-                      label: 'YouTube',
-                    }
+                    // {
+                    //   icon: 'fab fa-twitter',
+                    //   href: '#',
+                    //   label: 'Twitter',
+                    // },
+                    // {
+                    //   icon: 'fab fa-youtube',
+                    //   href: '#',
+                    //   label: 'YouTube',
+                    // }
                   ].map((social, index) => (
                     <a
                       key={index}
