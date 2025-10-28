@@ -53,38 +53,86 @@ const Gallery: React.FC = () => {
   });
 
   const galleryImages = [
-    // {
-    //   url: '/selamat.jpg',
-    //   alt: 'Galeri 1',
-    // },
+    {
+      url: '/selamat.jpg',
+      alt: 'Galeri 1',
+      orientation: 'portrait',
+    },
     {
       url: '/kajian.png',
       alt: 'Galeri 2',
+      orientation: 'landscape',
     },
     {
       url: '/sarasehan.png',
       alt: 'Galeri 3',
+      orientation: 'landscape',
     },
-    // {
-    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+4',
-    //   alt: 'Galeri 4',
-    // },
-    // {
-    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+5',
-    //   alt: 'Galeri 5',
-    // },
-    // {
-    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+6',
-    //   alt: 'Galeri 6',
-    // },
-    // {
-    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+7',
-    //   alt: 'Galeri 7',
-    // },
-    // {
-    //   url: 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Kegiatan+8',
-    //   alt: 'Galeri 8',
-    // },
+    {
+      url: '/pelantikan/1.jpg',
+      alt: 'Galeri 4',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/2.jpg',
+      alt: 'Galeri 5',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/3.jpg',
+      alt: 'Galeri 6',
+      orientation: 'landscape',
+    },
+    {
+      url: '/pelantikan/4.jpg',
+      alt: 'Galeri 7',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/5.png',
+      alt: 'Galeri 8',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/6.png',
+      alt: 'Galeri 8',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/7.png',
+      alt: 'Galeri 8',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/8.png',
+      alt: 'Galeri 8',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/9.png',
+      alt: 'Galeri 8',
+      orientation: 'portrait',
+    },
+    {
+      url: '/pelantikan/10.png',
+      alt: 'Galeri 8',
+      orientation: 'landscape',
+    },
+    {
+      url: '/pelantikan/11.png',
+      alt: 'Galeri 8',
+      orientation: 'landscape',
+    },
+    {
+      url: '/pelantikan/12.png',
+      alt: 'Galeri 8',
+      orientation: 'landscape',
+    },
+    {
+      url: '/pelantikan/13.png',
+      alt: 'Galeri 8',
+      orientation: 'landscape',
+    },
   ];
 
   const openLightbox = (imageUrl: string, imageAlt: string, index: number) => {
@@ -113,14 +161,31 @@ const Gallery: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Galeri</h2>
             <div className="w-20 h-1 bg-green-600 mx-auto"></div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          
+          {/* Masonry Grid Layout */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-max">
             {galleryImages.map((image, index) => (
-              <div key={index} className="fade-in card-hover cursor-pointer">
+              <div 
+                key={index} 
+                className={`fade-in card-hover cursor-pointer overflow-hidden rounded-lg ${
+                  image.orientation === 'portrait' 
+                    ? 'row-span-2' 
+                    : ''
+                }`}
+              >
                 <img
                   src={image.url}
                   alt={image.alt}
-                  className="w-full h-40 object-cover rounded-lg"
+                  className={`w-full h-full object-cover transition-transform duration-300 hover:scale-105 ${
+                    image.orientation === 'portrait' 
+                      ? 'h-80' 
+                      : 'h-40'
+                  }`}
                   onClick={() => openLightbox(image.url, image.alt, index)}
+                  onError={(e) => {
+                    // Fallback jika gambar tidak bisa dimuat
+                    e.currentTarget.src = 'https://via.placeholder.com/300x200/22c55e/ffffff?text=Gambar+Tidak+Tersedia';
+                  }}
                 />
               </div>
             ))}
