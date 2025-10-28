@@ -7,17 +7,17 @@ const Hero: React.FC = () => {
   const kaderData = [
     {
       id: 1,
-      nama: "Bagas Normahendra",
-      // jabatan: "Koordinator Pengkaderan",
+      nama: "Moh. Marwan",
+      jabatan: "Kabid P3A",
       foto: "/kader1.jpg",
-      whatsapp: "+6287734176081",
+      whatsapp: "+6285849358319",
       // telegram: "@ahmadrifai_hmi",
       instagram: "#"
     },
     {
       id: 2,
       nama: "Farhatun Hasanah",
-      // jabatan: "Sekretaris Pengkaderan",
+      jabatan: "Bendahara Umum",
       foto: "/kader2.jpg",
       whatsapp: "+6282335212256",
       // telegram: "@aminah_hmi",
@@ -162,7 +162,7 @@ const Hero: React.FC = () => {
                         </div>
                       </div>
                       <h4 className="text-xl font-bold text-gray-800 mb-1">{kader.nama}</h4>
-                      {/* <p className="text-green-600 font-semibold">{kader.jabatan}</p> */}
+                      <p className="text-green-600 font-semibold">{kader.jabatan}</p>
                     </div>
 
                     {/* Contact Options */}

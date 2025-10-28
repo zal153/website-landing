@@ -83,6 +83,13 @@ const News: React.FC = () => {
       imageUrl: 'https://detektifjatim.com/wp-content/uploads/2025/10/IMG-20251001-WA0002-1920x1080.jpg',
       externalUrl: 'https://detektifjatim.com/2025/10/peran-hmi-dalam-meningkatkan-sdm-dan-kepekaan-mahasiswa-pada-isu-sosial/',
     },
+    {
+      date: '28 Oktober 2025',
+      title: 'HMI Komisariat (P) UNIBA Madura periode 2025-2026 Resmi Dilantik',
+      excerpt: 'Himpunan Mahasiswa Islam (HMI) Komisariat (P) Universitas Bahaudin Mudhary (UNIBA) Madura resmi melantik pengurus baru periode 2025–2026, Senin (27/10/2025) malam. Prosesi pelantikan berlangsung khidmat di Hotel C1 Sumenep dengan...',
+      imageUrl: 'https://kliktimes.id/wp-content/uploads/2025/10/20251028_131952.jpg',
+      externalUrl: 'https://detektifjatim.com/2025/10/peran-hmi-dalam-meningkatkan-sdm-dan-kepekaan-mahasiswa-pada-isu-sosial/',
+    },
   ];
 
   return (
