@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     {
       id: 1,
       nama: "Moh. Marwan",
-      jabatan: "Kabid P3A",
+      jabatan: "ketua Bidang Penelitian, Pengembangan Anggota dan Pembinaan Anggota",
       foto: "/kader1.jpg",
       whatsapp: "+6285849358319",
       // telegram: "@ahmadrifai_hmi",
@@ -16,10 +16,10 @@ const Hero: React.FC = () => {
     },
     {
       id: 2,
-      nama: "Farhatun Hasanah",
-      jabatan: "Bendahara Umum",
+      nama: "Nurul Finatusahrah",
+      jabatan: "Ketua Bidang Pemberdayaan Perempuan",
       foto: "/kader2.jpg",
-      whatsapp: "+6282335212256",
+      whatsapp: "+6281237149947",
       // telegram: "@aminah_hmi",
       instagram: "#"
     }
