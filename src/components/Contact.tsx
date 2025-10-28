@@ -18,20 +18,19 @@ const Contact: React.FC = () => {
     setShowError(false);
 
     try {
-      // EmailJS configuration
       const templateParams = {
         from_name: formData.nama,
         from_email: formData.email,
         subject: formData.subjek,
         message: formData.pesan,
-        to_email: 'hmi@unbamadura.ac.id', // Email tujuan
+        to_email: 'hmi@unbamadura.ac.id',
       };
 
       await emailjs.send(
-        'service_qgl5y2i', // Dapatkan dari EmailJS dashboard
-        'template_xvqxias', // Dapatkan dari EmailJS dashboard
+        'service_qgl5y2i',
+        'template_xvqxias',
         templateParams,
-        'b9jgdE1m57r8eP_DM' // Dapatkan dari EmailJS dashboard
+        'b9jgdE1m57r8eP_DM'
       );
 
       setShowSuccess(true);
@@ -42,7 +41,6 @@ const Contact: React.FC = () => {
         pesan: '',
       });
 
-      // Hide success message after 5 seconds
       setTimeout(() => {
         setShowSuccess(false);
       }, 5000);
@@ -50,7 +48,6 @@ const Contact: React.FC = () => {
       console.error('Email sending failed:', error);
       setShowError(true);
       
-      // Hide error message after 5 seconds
       setTimeout(() => {
         setShowError(false);
       }, 5000);
