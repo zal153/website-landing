@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     {
       id: 1,
       nama: "Moh. Marwan",
-      jabatan: "ketua Bidang Penelitian, Pengembangan Anggota dan Pembinaan Anggota",
+      jabatan: "Ketua Bidang Penelitian, Pengembangan Anggota dan Pembinaan Anggota",
       foto: "/kader1.jpg",
       whatsapp: "+6285849358319",
       // telegram: "@ahmadrifai_hmi",
