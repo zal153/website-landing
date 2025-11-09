@@ -15,7 +15,9 @@ const About: React.FC = () => {
               <div>
                 <h4 className="text-xl font-semibold text-green-600 mb-3">Visi</h4>
                 <p className="text-gray-600 leading-relaxed">
-                  Terwujudnya mahasiswa Muslim yang berakhlak mulia, cerdas, dan bertanggung jawab dalam membangun masyarakat yang Islami.
+                  Meneguhkan nilai ke-HMI-an sebagai fondasi pembentukan kader
+                  berintegritas dan progresif yang siap menjadi pelopor perubahan dalam
+                    membangun peradaban Islam dan kebangsaan yang berkeadilan.
                 </p>
               </div>
               <div>
@@ -23,15 +25,32 @@ const About: React.FC = () => {
                 <ul className="text-gray-600 space-y-2">
                   <li className="flex items-start">
                     <i className="fas fa-check text-green-600 mt-1 mr-3"></i>
-                    Membentuk karakter mahasiswa yang Islami
+                    Menginternalisasi nilai ke-HMI-an dalam setiap proses kaderisasi sebagai
+                      dasar pembentukan karakter, spiritualitas, dan tanggung jawab sosial
+                      kader.
                   </li>
                   <li className="flex items-start">
                     <i className="fas fa-check text-green-600 mt-1 mr-3"></i>
-                    Mengembangkan potensi akademik dan non-akademik
+                    Mengembangkan kapasitas intelektual, literasi digital, dan kepemimpinan
+                    kader agar mampu beradaptasi dengan tantangan zaman.
                   </li>
                   <li className="flex items-start">
                     <i className="fas fa-check text-green-600 mt-1 mr-3"></i>
-                    Membangun solidaritas dan ukhuwah Islamiyah
+                    Menumbuhkan budaya kolaborasi, solidaritas, dan profesionalisme antar
+                    kader untuk memperkuat kekompakan organisasi yang berdaya guna dan
+                    berkelanjutan.
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check text-green-600 mt-1 mr-3"></i>
+                    Menanamkan etika keislaman, integritas, dan tanggung jawab moral
+                      dalam setiap aktivitas kader agar menjadi teladan di lingkungan akademik
+                      dan sosial.
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check text-green-600 mt-1 mr-3"></i>
+                    Mewujudkan kader progresif yang responsif terhadap isu-isu sosial,
+                      teknologi, dan kemanusiaan tanpa melepaskan nilai-nilai dasar perjuangan
+                      HMI.
                   </li>
                 </ul>
               </div>
